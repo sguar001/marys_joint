@@ -1,0 +1,859 @@
+/*
+========================
+GENERAL CSS
+========================
+*/
+
+/* Applied to all elements */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    /* code to keep footer at bottom*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.section-title
+{
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.section-title h2
+{
+    position: relative;
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.section-title hr
+{
+    height: 3px;
+    background-color: #389f4a;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.section-title p 
+{
+    color: #333;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.no-padding
+{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.page-wrap
+{
+    overflow-x: hidden;
+    
+    /* code to keep footer at bottom*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*
+========================
+LOGO CSS
+========================
+*/
+
+.logo
+{
+    margin-top: 135px;
+    margin-bottom: 70px;
+}
+
+/*
+========================
+HEADER CSS
+========================
+*/
+
+.header
+{
+    /*code to make header image resizable*/
+    width: 100vw;
+    height: 101vh;
+    margin: auto;
+    
+    background-image: url("../images/cover.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.header-overlay
+{
+    background-color: rgba(31, 31, 31, 0.5);
+    width: inherit;
+    height: inherit;
+}
+
+.header-text
+{
+    text-align: center;
+    margin-top: -90px;
+}
+
+.header-text h1
+{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 45px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.header-text p
+{
+    color: #fff;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.header-btns
+{
+    text-align: center;
+}
+
+.header-mmj img
+{
+    max-width: 100%;
+    display: inline-block;
+}
+
+.btn-learn,
+.btn-learn:focus,
+.btn-learn:active,
+.btn-learn:visited,
+.btn-learn:hover
+{
+    color: #fff;
+    background: #389f4a;
+    padding: 10px 30px;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.btn-contact-us,
+.btn-contact-us:focus,
+.btn-contact-us:active,
+.btn-contact-us:visited,
+.btn-contact-us:hover
+{
+    color: #fff;
+    background: #389f4a;
+    padding: 10px 30px;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+
+.kboard .header-text
+{
+    margin-top: 60px;
+}
+
+.kboard .header-btns
+{
+    margin-top: 25px;
+}
+
+.kboard .header
+{
+    height: 500px;    
+}
+
+/*
+========================
+NAVBAR CSS
+========================
+*/
+
+nav
+{
+    /*height: 80px; causes hamburger menu to disappear on mobile?*/
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;    
+}
+
+.navbar-default 
+{
+    background-color: #fff;
+    border-color: #444;
+    z-index: 110;
+}
+
+.navbar-default .navbar-nav > li
+{
+    margin-top: 20px;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:visited
+{
+    color: #1a1a1a;
+    font-family: "Raleway", sans-serif;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}   
+
+.navbar-default  .navbar-nav > li > a:hover
+{
+    color: #389f4a;
+}
+
+.navbar-brand
+{
+    width: 150px;
+    height: 80px;
+    overflow: visible;
+    padding: 0 15px;
+    line-height: 80px;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+
+.navbar-brand img
+{
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.navbar-default .navbar-nav > .active>a, 
+.navbar-default .navbar-nav > .active>a:hover,
+.navbar-default .navbar-nav > .active>a:focus 
+{
+    background-color: transparent;
+    color: #389f4a;
+} 
+
+
+/*to shrink the nav, resize navbar-brand and nav resizes auto*/
+nav.shrink.navbar>.container .navbar-brand
+{
+    margin-top: -10px;
+    padding-top: 5px; 
+    width: 125px;
+}
+
+nav.shrink.navbar-default .navbar-nav > li > a
+{
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+nav.mobile-nav.navbar-fixed-top
+{
+    opacity: 0;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;    
+}
+
+/*
+========================
+HOMEPAGE SLIDER CSS
+========================
+*/
+
+.showcase-overlay
+{
+    background-color: #1a1a1a;
+    padding: 80px 0;
+}
+
+.showcase
+{
+    margin-bottom: 150px;
+}
+
+/*make carousel image full width, bootstrap column padding is still present*/
+.carousel img
+{
+    min-width: 100%;
+    height: 100px;
+}
+
+
+.show-img
+{
+    width: 100%;
+    max-height: 715px;
+}
+
+/*
+========================
+SIGN UP SECTION CSS
+========================
+*/
+
+.sign-up
+{
+    background-color: #fff;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.sign-up-alert p 
+{
+    color: #1a1a1a;
+    font-size: 27px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.btn-sign-up,
+.btn-sign-up:active,
+.btn-sign-up:focus,
+.btn-sign-up:visited
+{
+    width: 90%;
+    font-size: 18px;
+    color: #fff;
+    background-color: #389f4a;
+    border: 1px solid #389f4a;
+    border-radius: 3px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.btn-sign-up:hover
+{
+    background-color: #318941;
+    border-color: #318941;
+    color: #fff;
+}
+
+.btn-sign-up i
+{
+    font-size: 20px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.email-sign-up .form-control
+{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: transparent;
+    border: 1px solid #aeaeae;
+    border-radius: 3px;
+    opacity: .8;
+    /*margin-bottom: 30px;*/
+    
+    /*force override outline with 0px*/
+    outline: none !important;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.email-sign-up.form-control:focus
+{
+    outline: none;
+}
+
+.sign-up-btn
+{
+    text-align: center;
+}
+
+/*
+======================
+SOCIAL ICONS CSS
+======================
+*/
+
+.top-buffer
+{
+    margin-top: 20px;
+}
+
+.social-icons ul
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.social-icons ul li
+{
+    list-style: none;
+    display: inline;
+    padding-left: 10px;
+}
+
+.social-icons ul li a
+{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #389f4a;
+    border-radius: 3px;
+    width: 55px;
+    height: 55px;
+    line-height: 70px;
+    color: #389f4a;
+}
+
+.social-icons ul li a:hover
+{
+    background-color: #389f4a;
+    border: 1px solid #389f4a;
+    color: #fff;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.social-icons ul li a i
+{
+    font-size: 35px;
+}
+
+/*
+======================
+FOOTER CSS
+======================
+*/
+
+.footer
+{
+    /* use margin-auto to keep footer at the bottom?*/
+    margin-top: auto;
+    background-color: #1a1a1a;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    border-bottom: 3px solid #389f4a;
+    width: 100%;
+}
+
+#copyright
+{
+    width: 100%;
+}
+
+#copyright p 
+{
+    color: #8C8B8A;
+    font-family: "/Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#copyright p a 
+{
+    text-decoration: none;
+    color: #389f4a;
+}
+
+.address,
+.address:focus,
+.address:hover,
+.address:visited
+{
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #389f4a; 
+}
+
+
+/*
+======================
+MISSION PAGE CSS
+======================
+*/
+
+.mission-body p 
+{
+    color: #333;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.mission
+{
+    margin-bottom: 150px;
+}
+
+.miss-img
+{
+    margin-top: 50px;
+}
+
+/*
+======================
+MEMBERSHIP PAGE CSS
+======================
+*/
+
+.member-prices
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.features-inner-wrapper
+{
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.mem-item
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*Style the lists*/
+.prices
+{
+    list-style: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.prices:hover 
+{
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+#bronze 
+{
+    background-color: #CD7F32;
+    color: #fff;
+    font-size: 25px;
+}
+
+#silver 
+{
+    background-color: #C0C0C0;
+    color: #fff;
+    font-size: 25px;
+}
+
+#gold 
+{
+    background-color: #D4AF37;
+    color: #fff;
+    font-size: 25px;
+}
+
+.prices .ul-header
+{
+    background-color: #111;
+    color: #fff;
+    font-size: 25px;
+}
+
+.prices li
+{
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.prices .ul-price
+{
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.su_btn,
+.su_btn:focus,
+.su_btn:active,
+.su_btn:visited
+{
+    background-color: #389f4a;
+    border: none;
+    color: #fff;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.price-title
+{
+    position: relative;
+    text-align: center;
+}
+
+.price-title h2
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.price-title span
+{
+    margin-left: 100px;
+}
+
+.price-title p
+{
+    color: #333;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.offer-banner
+{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+.alert-early
+{
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+.alert-early p
+{
+    margin-top: 5px;
+}
+
+.alert-early span
+{
+    color: #fff !important;
+    font-size: 24px;
+}
+
+.close
+{
+    opacity: 1 !important;
+}
+
+/*
+======================
+ABOUT US CSS
+======================
+*/
+
+.about-us
+{
+    margin-bottom: 150px;
+}
+
+.about-body p 
+{
+    color: #333;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.founders-row
+{
+    padding-top: 15px;
+}
+
+.founders-title h2
+{
+    position: relative;
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.founders-title hr
+{
+    height: 3px;
+    background-color: #389f4a;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.founders-row img
+{
+    padding: 0px 10px;
+}
+
+.caption
+{
+    text-align: center; 
+    margin: 10px 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+
+/*
+======================
+CONTACT US CSS
+======================
+*/
+
+.contact-us
+{
+    margin-bottom: 150px;
+}
+
+.contact-info h3
+{
+    text-align: center;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-info p
+{
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+}
+
+.contact-us-form h3
+{
+    text-align: center;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.contact-us-form .form-control
+{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #aeaeae;
+    border-radius: 3px;
+    /*margin-bottom: 15px;*/
+    opacity: .8;
+    
+    /*force override outline with 0px*/
+    outline: 0px !important;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+#form-message
+{
+    height: 117px;
+    resize: none;
+}
+
+.submit-btn,
+.submit-btn:active,
+.submit-btn:focus,
+.submit-btn:visited
+{
+    background-color: #389f4a;
+    border: 1px solid #389f4a;
+    border-radius: 4px;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    
+    outline: 0px !important;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.submit-btn:hover
+{
+    background-color: #389f4a;
+    color: #fff;
+    border-color: #389f4a;
+}

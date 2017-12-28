@@ -1,0 +1,232 @@
+/*xs small devices (iPhone 4)*/
+@media only screen and (max-width: 320px) and (max-height: 480px)
+{
+    .navbar-default
+    {
+        background-color: #fff !important;
+        border-color: #e6e6e6;
+    }
+    
+    .sign-up .col-md-3
+    {
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .header-text, .header-btns
+    {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .header-text
+    {
+        margin-top: 45px;
+    }
+    
+    .btn-contact-us
+    {
+        margin-left: 0px !important;
+        margin-top: 20px;
+    }
+    
+    .btn-learn
+    {
+        margin-top: 10px;
+    }
+    
+    .show-img
+    {
+        max-height: 175px;
+    }
+}
+
+/*Small devices*/
+@media only screen and (max-width: 400px) and (min-height: 500px)
+{
+    .navbar-default
+    {
+        background-color: #fff !important;
+        border-color: #e6e6e6;
+    }
+    
+    .sign-up .col-md-3
+    {
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .header-text, .header-btns
+    {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .header-text
+    {
+        margin-top: 100px;
+    }
+    
+    .btn-contact-us
+    {
+        margin-left: 0px !important;
+        margin-top: 20px;
+    }
+    
+    .btn-learn
+    {
+        margin-top: 10px;
+    }
+    
+    .show-img
+    {
+        max-height: 185px;
+    }
+}
+
+@media only screen and (min-width: 401px)
+{
+    .header-text, .header-btns
+    {
+        text-align: center;
+    }
+    
+    .header-text
+    {
+        margin-top: 150px;
+    }
+    
+    .header-btns
+    {
+        margin-top: 20px;
+    }
+    
+    .sign-up .col-md-3
+    {
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .btn-contact-us
+    {
+        margin-left: 5px !important;
+    }
+    
+    .show-img
+    {
+        max-height: 245px;
+    }
+}
+
+@media only screen and (min-width: 512px) and (orientation: landscape)
+{
+    .show-img
+    {
+        max-height: 345px;
+    }
+    
+    .header-text
+    {
+        margin-top: 70px;
+    }
+
+    .header-btns
+    {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape)
+{
+    .header-text
+    {
+        margin-top: 200px;
+        padding-top: 25px;
+    }
+    
+    .header-btns
+    {
+        margin-top: 25px;
+    }
+}
+
+/*Small devices and Tablets*/
+@media only screen and (min-width: 768px)
+{
+    /*align header text and buttons*/   
+    .header-text, .header-btns
+    {
+        display: block;
+        text-align: center;
+    }
+    
+    .header-btns
+    {
+        margin-bottom: 50px;
+    }
+    
+    .header-text
+    {
+        margin-top: 250px;
+        padding-top: 25px;
+    }
+    
+    .footer-info p
+    {
+        text-align: center;
+        display: block;
+        margin-bottom: 25px;
+    }
+    
+    .btn-contact-us
+    {
+        margin-left: 5px !important;
+        margin-top: 0px;
+    }
+    
+    .show-img
+    {
+        max-height: 464px;
+    }
+}
+
+
+@media only screen and (max-width: 992px)
+{
+    .footer-info p
+    {
+        text-align: center;
+        display: block;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .sign-up .col-md-3
+    {
+        text-align: center;
+        padding-top: 0px;
+    }
+    
+    .copy-right
+    {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1024px)
+{
+    .show-img
+    {
+        max-height: 605px;
+    }
+}
+
+@media only screen and (min-width: 1025px)
+{
+    .show-img
+    {
+        max-height: 715px;
+    }
+}

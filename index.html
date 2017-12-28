@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mary's Joint </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900|Source+Sans+Pro:300,400,900" rel="stylesheet">
+        
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        
+        <!-- CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.css"> 
+        <link rel="stylesheet" type="text/css" href="css/mj_responsive.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        
+        <div class="page-wrap">
+                
+            <!-- Header + NavBar -->
+            <header class="header" id="HOME">
+                
+                <!-- Navigation Bar (will be fixed to top)-->
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    
+                  <div class="container">
+                      
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mj-navbar-collapse-1" aria-expanded="false">
+                                  
+                                <span class="sr-only">Toggle navigation</span>
+                                
+                                <span class="icon-bar"></span>
+                                
+                                <span class="icon-bar"></span>
+                                
+                                <span class="icon-bar"></span>
+                                
+                            </button>
+                          
+                            <a class="navbar-brand" href="#"> 
+                                  
+                                  <!-- small size logo -->
+                                  <img class="img-responsive" src="images/mj-small.png" alt="small logo">
+                                  
+                            </a>
+                          
+                        </div>
+                
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="mj-navbar-collapse-1">
+                            
+                            <!-- right align the navbar! -->
+                            <ul class="nav navbar-nav navbar-right">
+                                
+                                <!-- Scroll to header (id of HOME)-->
+                                <li><a href="#" class="nav-item">HOME</a></li>
+                                <li><a href="mission.html" class="nav-item">OUR MISSION</a></li>
+                                <li><a href="membership.html" class="nav-item">MEMBERSHIP</a></li>
+                                <li><a href="about.html" class="nav-item">ABOUT US</a></li>
+                                <li><a href="contact.html" class="nav-item">CONTACT US</a></li>
+                            </ul>
+                          
+                        </div><!-- /.navbar-collapse -->
+                        
+                  </div><!-- /.container -->
+                  
+                </nav>
+                
+                <div class="header-overlay"> 
+                
+                    <div class="container header-container">
+                        
+                        <!-- row for logo -->
+                        <div class="row">
+                            
+                            <div class="col-md-12">
+                                
+                                <!-- site logo goes here -->
+                                <!--<div class="logo text-center">-->
+                                    
+                                <!--    <img class="center-block img-responsive" src="images/mj-small.png" alt="LOGO NOT AVAIALBLE">    -->
+                                    
+                                <!--</div>-->
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- row for header text/buttons & header image-->
+                        <div class="row">
+                            
+                            <!-- col for header text and btns -->
+                            <div class="col-lg-12">
+                                
+                                <div class="header-text">
+                                    
+                                    <!-- Title and Description -->
+                                    <h1>A cool and green-friendly lounge!</h1>
+                                    <p>Come smoke some bud at Mary's Joint!</p>
+                                    
+                                </div>
+                                
+                                <div class="header-btns">
+                                    
+                                    <a class="btn btn-learn" href="membership.html">Learn More</a>
+                                    <a class="btn btn-contact-us" href="contact.html">Contact Us</a>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <!-- Image for Background -->
+                        <!--<div id="bg">-->
+                        
+                        <!--    <img src="images/cover.jpg" alt="background">-->
+                        
+                        <!--</div>-->
+                        
+                    </div>
+                    
+                </div>
+            
+            </header>
+            
+            <!-- Sign Up Section -->
+            <section class="sign-up">
+                
+                <div class="container">
+                    
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                            
+                                <div class="sign-up-alert">
+                                    
+                                    <p>
+                                          Sign up with your email address to receive news and updates about Mary's Joint!
+                                    </p>
+                                    
+                                </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <form id="news-form" action="./php/news.php" method="POST" role="form">
+                    
+                        <div class="sign-up-messages"></div>
+                    
+                        <div class="row email-sign-up">
+                            
+                                <div class="col-md-9">
+                                        
+                                        <div class="col-md-6 name-input">
+                                            
+                                            <!-- name input box -->
+                                            <div class="form-group">
+                                                
+                                                <input id="sign-up-form-name" type="text" class="form-control" name="name" placeholder="Name" required="required" data-error="Name is required">
+                                                <div class="help-block with-errors"></div>
+
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div class="col-md-6 email-input" >
+                                            
+                                            <!-- email input box -->
+                                            <div class="form-group">
+                                                
+                                                <input id="sign-up-form-email" type="email" class="form-control" name="email" placeholder="Email" required="required" data-error="Valid email is required">
+                                                <div class="help-block with-errors"></div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                </div>
+        
+                            <div class="col-md-3 sign-up-btn">
+                                
+                                    <!--<a class="btn btn-sign-up" href="#">Sign Up! -->
+                                    <!--    <i class="fa fa-envelope"></i>-->
+                                    <!--</a>-->
+                                    <button type="submit" class="btn btn-sign-up">SEND <i class="fa fa-envelope"></i></button>
+                                    
+                            </div>
+                            
+                        </div>
+                    
+                    </form>
+                        
+                </div>
+                
+            </section>
+            
+            <!-- Image showcase -->
+            <section class="showcase">
+                
+                <div class="showcase-overlay">
+                    
+                        <div class="container">
+                            
+                            <div class="row">
+                                
+                                <div class="col-md-12">
+                                    
+                                    <div id="carousel-show" class="carousel slide" data-ride="carousel">
+                                        
+                                        <!-- indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-show" data-slide-to="0" class="active"></li>    
+                                            <li data-target="#carousel-show" data-slide-to="1"></li>    
+                                            <li data-target="#carousel-show" data-slide-to="2"></li>    
+                                        </ol>
+                                        
+                                        <!-- wrapper for slides --> 
+                                        <div class="carousel-inner">
+                                            
+                                            <!-- item 01 -->
+                                            <div class="item active text-center">
+                                                
+                                                <!-- user center-block to center-align image -->
+                                                <img class="show-img" src="http://www.stonerdays.com/wp-content/uploads/2014/06/Legalizing_Marijuana_Bars2.jpg" alt="slide1" class="center-block">
+                                                
+                                                <!--<div class="mem-caption">-->
+                                                    
+                                                <!--    <h2>Image 1</h2>-->
+                                                    
+                                                <!--</div>-->
+                                                
+                                            </div>
+                                            
+                                            <!-- item 02 -->
+                                            <div class="item text-center">
+                                                
+                                                <!-- user center-block to center-align image -->
+                                                <img class="show-img" src="https://cannabislifenetwork.com/wp-content/uploads/2017/11/cannabis-lounge-759x500.jpg" alt="slide2" class="center-block">
+                                                
+                                                <!--<div class="mem-caption">-->
+                                                    
+                                                <!--    <h2>Image 2</h2>-->
+                                                    
+                                                <!--</div>-->
+                                                
+                                            </div>
+                                            
+                                            <!-- item 03 -->
+                                            <div class="item text-center">
+                                                
+                                                <!-- user center-block to center-align image -->
+                                                <img class="show-img" src="https://cannabisnow.com/wp-content/uploads/2017/03/Marijuana-Clubs.jpg" alt="slide3" class="center-block">
+                                                
+                                                <!--<div class="mem-caption">-->
+                                                    
+                                                <!--    <h2>Image 3</h2>-->
+                                                    
+                                                <!--</div>-->
+                                                
+                                            </div>  
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    
+                </div>
+                
+            </section>
+            
+            <!-- Footer -->
+            <footer class="footer">
+                
+                <div class="container footer-info">
+                    
+                    <div class="row top-buffer">
+                        
+                        <div class="col-md-6 copy-right">
+                            
+                            <div id="copyright">
+                                
+                                <p>Copyright &copy; 2017 <a hfef="#"> - Mary's Joint</a></p>
+                                
+                            </div>
+                            
+                        </div>
+                         
+                        <div class="col-md-6">
+                            
+                            <!-- Nested Row -->
+                            <div class="row">
+                                
+                                <a href="#" class="address">
+                                    
+                                    <!-- Col for Address on Footer -->
+                                    <div class="col-md-6">
+                                        
+                                        <div>
+                                            
+                                            <p>Mary's Joint<br>TBD<br>Coming to Riverside, CA</p>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </a>
+                                
+                                    
+                                <!-- Col for Social Icons on Footer -->
+                                <div class="col-md-6 no-padding">
+                                    
+                                    <div class="row">
+                                        
+                                        <div class="col-md-12">
+                                            
+                                            <div class="social-icons">
+                                                
+                                                <ul>
+                                                    
+                                                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="https://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
+                                                    
+                                                </ul>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                    
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </footer>
+            
+        </div>
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+        <script src="js/news.js"></script>
+    
+        <!-- Custom JavaScript -->
+        <script src="js/main.js"></script>
+        
+    </body>
+    
+</html>

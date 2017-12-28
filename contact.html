@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title> Mary's Joint </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900|Source+Sans+Pro:300,400,900" rel="stylesheet">
+        
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        
+        <!-- CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/mj_responsive.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    
+    <body>
+        
+        <div class="page-wrap">
+        
+            <!-- Navigation Bar (will be fixed to top)-->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                    
+                  <div class="container">
+                      
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mj-navbar-collapse-1" aria-expanded="false">
+                                  
+                                <span class="sr-only">Toggle navigation</span>
+                                
+                                <span class="icon-bar"></span>
+                                
+                                <span class="icon-bar"></span>
+                                
+                                <span class="icon-bar"></span>
+                                
+                            </button>
+                          
+                            <a class="navbar-brand" href="index.html"> 
+                                  
+                                  <!-- small size logo -->
+                                  <img class="img-responsive" src="images/mj-small.png" alt="small logo">
+                                  
+                            </a>
+                          
+                        </div>
+                
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="mj-navbar-collapse-1">
+                            
+                            <!-- right align the navbar! -->
+                            <ul class="nav navbar-nav navbar-right">
+                                
+                                <!-- Scroll to header (id of HOME)-->
+                                <li><a href="index.html" class="nav-item">HOME</a></li>
+                                <li><a href="mission.html" class="nav-item">OUR MISSION</a></li>
+                                <li><a href="membership.html" class="nav-item">MEMBERSHIP</a></li>
+                                <li><a href="about.html" class="nav-item">ABOUT US</a></li>
+                                <li><a href="contact.html" class="nav-item">CONTACT US</a></li>
+                            </ul>
+                          
+                        </div><!-- /.navbar-collapse -->
+                        
+                  </div><!-- /.container -->
+                  
+                </nav>
+                
+            <!-- contact us form -->
+            <section class="contact-us">
+                
+                <!-- Section Title -->
+                <div class="container">
+                    
+                    <div class="row">
+                        
+                        <div class="col-md-10 col-md-offset-1">
+                            
+                            <div class="section-title">
+                                
+                                <h2>Contact Us</h2>
+                                <hr>
+    
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                <!-- Address and Phone Number -->
+                <div class="container contact-info">
+                    
+                    <div class="row">
+                        
+                        <div class="col-md-6">
+                            
+                            <h3>Phone Number</h3>
+                            <p>(555)-555-5555</p>
+                            
+                        </div>
+                        
+                        <div class="col-md-6">
+                            
+                            <h3>Address</h3>
+                            <p>Mary's Joint<br>TBD<br>Coming to Riverside!</p>
+    
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="row">
+                        
+                        <div class="col-md-12">
+                            
+                            <h3>Membership Inquiries</h3>
+                            <p>If you are interested in a membership or would like to know more information about us, email us directly at <a href="mailto:marysjoint951@gmail.com">marysjoint951@gmail.com</a></p>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+                <!-- Contact us Form -->
+                <div class="contact-us-form">
+                    
+                    <div class="container">
+                        
+                        <div class="email-header">
+                            
+                            <h3>Send Us an Email</h3>
+                            
+                        </div>
+                        
+                        <form id="contact-form" action="./php/contact_email.php" method="POST" role="form">
+                            
+                            <div class="messages"></div>
+                            
+                            <div class="row">
+                                
+                                <div class="col-md-4">
+                                    
+                                    <div class="form-group">
+                                        
+                                        <input id="form-name" type="text" class="form-control" name="name" placeholder="Name" required="required" data-error="Name is required">
+                                        <div class="help-block with-errors"></div>
+                                        
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        
+                                        <input id="form-email" type="email" class="form-control" name="email" placeholder="Email" required="required" data-error="Valid email is required">
+                                        <div class="help-block with-errors"></div>             
+                                        
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        
+                                        <input id="form-subject" type="text" class="form-control" name="subject" placeholder="Subject" >
+                                        <div class="help-block with-errors"></div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="col-md-8">
+                                    
+                                    <div class="form-group">
+                                        
+                                        <textarea class="form-control" id="form-message" name="message" rows="15" cols="10" placeholder="Message Text..." required="required" data-error="Please enter a message"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                        
+                                        <input type="submit" class="btn submit-btn" value="SEND">
+                                        
+                                    </div>
+
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+                
+            </section>
+            
+            <!-- Footer -->
+            <footer class="footer">
+                
+                <div class="container footer-info">
+                    
+                    <div class="row top-buffer">
+                        
+                        <div class="col-md-6 copy-right">
+                            
+                            <div id="copyright">
+                                
+                                <p>Copyright &copy; 2017 <a hfef="#"> - Mary's Joint</a></p>
+                                
+                            </div>
+                            
+                        </div>
+                         
+                        <div class="col-md-6">
+                            
+                            <!-- Nested Row -->
+                            <div class="row">
+                                
+                                <a href="#" class="address">
+                                    
+                                    <!-- Col for Address on Footer -->
+                                    <div class="col-md-6">
+                                        
+                                        <div>
+                                            
+                                            <p>Mary's Joint<br>TBD<br>Coming to Riverside, CA</p>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </a>
+                                
+                                    
+                                <!-- Col for Social Icons on Footer -->
+                                <div class="col-md-6 no-padding">
+                                    
+                                    <div class="row">
+                                        
+                                        <div class="col-md-12">
+                                            
+                                            <div class="social-icons">
+                                                
+                                                <ul>
+                                                    
+                                                    <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="https://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
+                                                    
+                                                </ul>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                    
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </footer>  
+            
+        </div>
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+        <script src="js/contact.js"></script>
+    
+        <!-- Custom JavaScript -->
+        <script src="js/main.js"></script>
+    
+    </body>
+    
+</html>
